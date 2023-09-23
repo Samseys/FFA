@@ -1,0 +1,6 @@
+name: FFA
+author: Samsey
+version: 1.0
+api-version: 1.15
+depend: [Netherboard, LuckPerms, SmartInvs, SuperVanish]
+main: me.samsey.ffa.FFA
