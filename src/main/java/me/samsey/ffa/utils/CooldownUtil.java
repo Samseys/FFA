@@ -34,9 +34,10 @@ public class CooldownUtil implements Listener {
     }
     public void putCooldown(UUID uuid, String cooldownName, long duration) {
         Map<String, CooldownEntry> playerCooldowns = cooldowns.get(uuid);
-        if(playerCooldowns == null)
+        if(playerCooldowns == null) {
             playerCooldowns = new HashMap<>();
             cooldowns.put(uuid, playerCooldowns);
+        }
 
         playerCooldowns.put(cooldownName, new CooldownEntry(System.currentTimeMillis(), duration));
     }
